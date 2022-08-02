@@ -9,6 +9,7 @@ import Copied from "./components/Copied";
 import { brandsArray } from "./data/brands";
 import "./App.scss";
 import Collection from "./components/Collection";
+import ColorGenerator from "./components/ColorGenerator";
 
 function App() {
   const [brands, setBrands] = useState(brandsArray);
@@ -19,7 +20,7 @@ function App() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setCopied(false);
-    }, 500);
+    }, 1000);
     return () => {
       clearTimeout(timeout);
     };
@@ -53,6 +54,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Content />} />
             <Route path="/collection/:slugs" element={<Collection />} />
+            <Route path="/generator" element={<ColorGenerator />} />
           </Routes>
         </MainContext.Provider>
       </BrowserRouter>

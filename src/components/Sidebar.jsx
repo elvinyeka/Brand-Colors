@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import { AiOutlineClose } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -31,6 +32,9 @@ const Sidebar = () => {
               <a onClick={toggleModal} href="#!">
                 About BrandColors
               </a>
+            </li>
+            <li>
+              <Link to="/generator">Color Generator</Link>
             </li>
           </ul>
         </nav>
