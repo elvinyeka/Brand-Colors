@@ -14,9 +14,9 @@ const Sidebar = () => {
     <>
       <aside className="sidebar">
         <h1 className="logo">
-          <a href="#!">
+          <Link to="/">
             Brand<strong>Colors</strong>
-          </a>
+          </Link>
         </h1>
         <div className="description">
           The biggest collection of official brand color codes around. Curated
@@ -29,12 +29,15 @@ const Sidebar = () => {
         <nav className="menu">
           <ul>
             <li>
-              <a onClick={toggleModal} href="#!">
-                About BrandColors
-              </a>
+              <Link to="/">BrandColors</Link>
             </li>
             <li>
               <Link to="/generator">Color Generator</Link>
+            </li>
+            <li>
+              <a onClick={toggleModal} href="#!">
+                About BrandColors
+              </a>
             </li>
           </ul>
         </nav>
