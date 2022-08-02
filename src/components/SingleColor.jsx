@@ -1,7 +1,6 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import Clipboard from "react-clipboard.js";
 import { MdContentCopy } from "react-icons/md";
-import { getContrastYIQ } from "../helpers";
 import MainContext from "../MainContext";
 // import { BsClipboard } from "react-icons/bs";
 
@@ -9,7 +8,6 @@ import MainContext from "../MainContext";
 
 const SingleColor = ({ rgb, weight, index, hexColor }) => {
   const { setCopied } = useContext(MainContext);
-  const [alert, setAlert] = useState(false);
   const bcg = rgb.join(",");
   // const hex = rgbToHex(...rgb);
   const hex = `${hexColor}`;
