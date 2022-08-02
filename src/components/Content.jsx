@@ -1,6 +1,4 @@
 import React, { useContext } from "react";
-import LazyLoad from "react-lazyload";
-import { v4 as uuidv4 } from "uuid";
 import { List, AutoSizer } from "react-virtualized";
 
 import Search from "./Search";
