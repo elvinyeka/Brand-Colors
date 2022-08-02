@@ -13,7 +13,7 @@ const Download = () => {
   const getLink = () => {
     prompt(
       "Here's the URL to share",
-      `http://localhost:3000/collection/${collection}`
+      `https://brand-colors-plus.netlify.app/collection/${collection}`
     );
   };
 
